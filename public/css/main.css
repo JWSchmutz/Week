@@ -1,0 +1,19 @@
+#mainContainer{
+    height: 100%;
+    width: 100%;
+}
+
+
+#loginpg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/computer-login.jpg);
+    background-size: cover;
+    padding: 1rem;
+}
+
+#loginpg .card {
+    background-color: rgba(38, 43, 37, .7);
+    color: lightgray;
+
+}
