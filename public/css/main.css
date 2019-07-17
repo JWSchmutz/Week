@@ -1,0 +1,39 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+nav {
+    background-color: #182e49;
+    color: #ffffff;
+}
+ nav a {
+     color: #ffffff;
+ }
+footer {
+    background-color: #f2f2f2;
+    color: #636363;
+}
+
+.card {
+    background-color: rgba(38, 43, 37, .6);
+    color: lightgray;
+}
+
+#loginPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/computer-login.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+}
+
+#registerPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/computer-register.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+
