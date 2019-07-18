@@ -45,6 +45,17 @@ footer a:visited {
 footer a:hover {
     color: #127BBC;
 }
+
+#right
+{
+    /* position:absolute; */
+    right:0px;
+    margin-right: 1rem;
+}
+
+.fa-angle-double-down {
+color: #f2f2f2;
+}
  
 /* Landing Page */
 
@@ -89,13 +100,18 @@ footer a:hover {
     background-position: center;
     padding: 1rem;
 }
-#right
-{
-    /* position:absolute; */
-    right:0px;
-    margin-right: 1rem;
+
+/* Dashboard */
+
+#dashboardPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/abstract-img-background.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
 }
 
-.fa-angle-double-down {
-color: #f2f2f2;
+#dashboardPg .card {
+    margin: 2rem;
 }
