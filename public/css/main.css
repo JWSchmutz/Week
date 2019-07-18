@@ -19,6 +19,33 @@ footer {
     color: lightgray;
 }
 
+#chatBtn {
+    background-color: #182e49;
+    color: #24A68C;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.534), 0 6px 20px 0 rgba(0,0,0,.534);
+
+}
+
+footer a:link {
+    color: #182e49;
+  }
+ 
+footer a:visited {
+    color: #24A68C;
+  }
+  
+footer a:hover {
+    color: #127BBC;
+  }
+  
+/* footer a:active {
+    color: #127BBC;
+  } */
+
+
 /* Landing Page */
 
 #landingPg {
@@ -43,6 +70,13 @@ footer {
     background-size: cover;
     background-position: center;
     padding: 4rem;
+}
+
+#loginSubtextBox p {
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    font-size: 2.5rem;
 }
 
 /* Register Page */
