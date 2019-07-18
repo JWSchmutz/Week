@@ -25,13 +25,43 @@
         </nav>
     </div>
 </div>
-<div class="row mt-5">
-    <div class="col-md-6 m-auto">
-        <div class="card card-body text-center">
-            <h1><i class="fab fa-node-js fa-3x"></i></h1>
-            <p>Create an account or login</p>
-            <a href="/users/register" class="btn btn-primary btn-block mb-2">Register</a>
-            <a href="/users/login" class="btn btn-secondary btn-block">Login</a>
+<div id="landingPg">
+    <!-- Button trigger modal -->
+    {{!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#landingPgModal">
+        Demo Modal
+    </button> --}}
+
+    <!-- Modal -->
+    <div class="modal fade" id="landingPgModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Honest Data Exchange</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Welcome to Honest Data Exchange!</p>
+                    <p>Your source for the best wholesale pricing information on the products you buy.</p>
+                    <h2>Are you paying too much?</h2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Find out more.</button>
+                    {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 m-auto">
+            <div class="card card-body text-center">
+                <h1><i class="fas fa-notes-medical"></i></h1>
+                <p>Create an account or login</p>
+                <a href="/users/register" class="btn btn-primary btn-block mb-2">Register</a>
+                <a href="/users/login" class="btn btn-secondary btn-block">Login</a>
+            </div>
         </div>
     </div>
 </div>

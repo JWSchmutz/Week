@@ -19,6 +19,23 @@ footer {
     color: lightgray;
 }
 
+/* Landing Page */
+
+#landingPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/abstract-img-background.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+}
+
+#landingPg .card {
+    margin: 2rem;
+}
+
+/* Login Page */
+
 #loginPg {
     height: 100%;
     width: 100%;
@@ -27,6 +44,8 @@ footer {
     background-position: center;
     padding: 4rem;
 }
+
+/* Register Page */
 
 #registerPg {
     height: 100%;
