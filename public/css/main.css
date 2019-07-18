@@ -1,14 +1,19 @@
+/* Main */
+
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
+
 nav {
     background-color: #182e49;
     color: #ffffff;
 }
+
  nav a {
      color: #ffffff;
- }
+}
+
 footer {
     background-color: #f2f2f2;
     color: #636363;
@@ -31,21 +36,16 @@ footer {
 
 footer a:link {
     color: #182e49;
-  }
+}
  
 footer a:visited {
     color: #24A68C;
-  }
+}
   
 footer a:hover {
     color: #127BBC;
-  }
-  
-/* footer a:active {
-    color: #127BBC;
-  } */
-
-
+}
+ 
 /* Landing Page */
 
 #landingPg {
@@ -89,4 +89,13 @@ footer a:hover {
     background-position: center;
     padding: 1rem;
 }
+#right
+{
+    /* position:absolute; */
+    right:0px;
+    margin-right: 1rem;
+}
 
+.fa-angle-double-down {
+color: #f2f2f2;
+}
