@@ -1,14 +1,19 @@
+/* Main */
+
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
+
 nav {
     background-color: #182e49;
     color: #ffffff;
 }
+
  nav a {
      color: #ffffff;
- }
+}
+
 footer {
     background-color: #f2f2f2;
     color: #636363;
@@ -31,21 +36,27 @@ footer {
 
 footer a:link {
     color: #182e49;
-  }
+}
  
 footer a:visited {
     color: #24A68C;
-  }
+}
   
 footer a:hover {
     color: #127BBC;
-  }
-  
-/* footer a:active {
-    color: #127BBC;
-  } */
+}
 
+#right
+{
+    /* position:absolute; */
+    right:0px;
+    margin-right: 1rem;
+}
 
+.fa-angle-double-down {
+color: #f2f2f2;
+}
+ 
 /* Landing Page */
 
 #landingPg {
@@ -90,3 +101,17 @@ footer a:hover {
     padding: 1rem;
 }
 
+/* Dashboard */
+
+#dashboardPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/abstract-img-background.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+
+#dashboardPg .card {
+    margin: 2rem;
+}

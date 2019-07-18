@@ -5,6 +5,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-angle-double-down"></i></span>
+
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -12,10 +13,10 @@
                         <a class="nav-link" href="/users/login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/users/register">Register <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/users/register">Register</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/users/aboutus">About Us <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Why use HDX?</a>
@@ -31,31 +32,24 @@
         </nav>
     </div>
 </div>
-<div id="dashboardPg">
-    <h1 class="mt-4">Dashboard</h1>
-    <p class="lead mb-3">Welcome {{username}}!</p>
+<div id="aboutUsPg">
     <div class="row">
         <div class="col-md-6 m-auto">
             <div class="card card-body">
-                <h2>Content</h2>
+                <p>About us</p>
+                <img src="..." alt="placeholder img text" class="img-thumbnail">
                 <p class="lead mt-4">
-                    Items listed:
+                    No Account? <a href="/users/register">Register</a>
                 </p>
-                <ol>
-                    <li>a</li>
-                    <li>e</li>
-                    <li>i</li>
-                    <li>o</li>
-                    <li>u</li>
-                </ol>
             </div>
         </div>
         <div class="col-md-6 m-auto">
             <div class="card card-body">
-                <p>Manage Account</p>
-                <button>Do the things</button>
+                <p>About us</p>
+                <p>Awesome things about HDX!</p>
+                <p>Brand identity</p>
+                <p>Share the mission!</p>
             </div>
         </div>
     </div>
-    <a href="/users/logout" class="btn btn-secondary">Logout</a>
 </div>
