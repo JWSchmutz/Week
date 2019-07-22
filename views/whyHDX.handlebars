@@ -9,17 +9,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/users/login">Login <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/login">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/users/register">Register</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/aboutus">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/whyHDX">Why use HDX?</a>
+                        <a class="nav-link" href="/whyHDX">Why use HDX? <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -32,32 +32,23 @@
         </nav>
     </div>
 </div>
-<div id="loginPg">
+<div id="whyHDXPg">
     <div class="row">
         <div class="col-md-6 m-auto">
             <div class="card card-body">
-                <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i> Login</h1>
-                {{!-- <% include ./partials/messages %> --}}
-                <form action="/users/login" method="POST">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" />
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" class="form-control"
-                            placeholder="Enter Password" />
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Login</button>
-                </form>
+                <p>Why use HDX?</p>
+                <img src="/content/images/dna-3539309.jpg" alt="Why use HDX?" class="img-thumbnail">
                 <p class="lead mt-4">
                     No Account? <a href="/users/register">Register</a>
                 </p>
             </div>
         </div>
         <div class="col-md-6 m-auto">
-            <div id="loginSubtextBox" class="card card-body">
-                <p>Ensure you have the lowest prices for all your critical medical supplies.</p>
+            <div class="card card-body">
+                <p>Why use HDX?</p>
+                <p>Science, that's why</p>
+                <p>And because we said so.</p>
+                <p>DO IT!</p>
             </div>
         </div>
     </div>

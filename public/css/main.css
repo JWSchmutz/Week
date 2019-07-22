@@ -1,0 +1,117 @@
+/* Main */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #182e49;
+    color: #ffffff;
+}
+
+ nav a {
+     color: #ffffff;
+}
+
+footer {
+    background-color: #f2f2f2;
+    color: #636363;
+}
+
+.card {
+    background-color: rgba(38, 43, 37, .6);
+    color: lightgray;
+}
+
+#chatBtn {
+    background-color: #182e49;
+    color: #24A68C;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.534), 0 6px 20px 0 rgba(0,0,0,.534);
+
+}
+
+footer a:link {
+    color: #182e49;
+}
+ 
+footer a:visited {
+    color: #24A68C;
+}
+  
+footer a:hover {
+    color: #127BBC;
+}
+
+#right
+{
+    /* position:absolute; */
+    right:0px;
+    margin-right: 1rem;
+}
+
+.fa-angle-double-down {
+color: #f2f2f2;
+}
+ 
+/* Landing Page */
+
+#landingPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/abstract-img-background.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+}
+
+#landingPg .card {
+    margin: 2rem;
+}
+
+/* Login Page */
+
+#loginPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/computer-login.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+}
+
+#loginSubtextBox p {
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Register Page */
+
+#registerPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/computer-register.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+
+/* Dashboard */
+
+#dashboardPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/abstract-img-background.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+
+#dashboardPg .card {
+    margin: 2rem;
+}
