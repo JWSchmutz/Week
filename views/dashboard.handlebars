@@ -8,12 +8,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    {{#unless username}}
                     <li class="nav-item">
                         <a class="nav-link" href="/users/login">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/users/register">Register <span class="sr-only">(current)</span></a>
                     </li>
+                    {{/unless}}
+                    {{#if username}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">{{username}}'s Dashboard <span class="sr-only">(current)</a>
+                    </li>
+                    <li class="nav-item pt-1" style="font-size: 12px">
+                        <a class="nav-link" href="/users/logout">(Logout?)</a>
+                    </li>
+                    {{/if}}
                     <li class="nav-item">
                         <a class="nav-link" href="/aboutus">About Us</a>
                     </li>
