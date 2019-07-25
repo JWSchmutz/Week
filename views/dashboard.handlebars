@@ -17,11 +17,8 @@
                     </li>
                     {{/unless}}
                     {{#if username}}
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/dashboard">{{username}}'s Dashboard <span class="sr-only">(current)</a>
-                    </li>
-                    <li class="nav-item pt-1" style="font-size: 12px">
-                        <a class="nav-link" href="/users/logout">(Logout?)</a>
                     </li>
                     {{/if}}
                     <li class="nav-item">
@@ -30,6 +27,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/whyHDX">Why use HDX?</a>
                     </li>
+                    {{#if username}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/logout">Logout</a>
+                    </li>
+                    {{/if}}
                 </ul>
             </div>
             <div id="right">
@@ -48,16 +53,7 @@
         <div class="col-md-6 m-auto">
             <div class="card card-body">
                 <h2>Content</h2>
-                <p class="lead mt-4">
-                    Items listed:
-                </p>
-                <ol>
-                    <li>a</li>
-                    <li>e</li>
-                    <li>i</li>
-                    <li>o</li>
-                    <li>u</li>
-                </ol>
+                <button><a href="/product">View Product Pricing</a></button>
             </div>
         </div>
         <div class="col-md-6 m-auto">
