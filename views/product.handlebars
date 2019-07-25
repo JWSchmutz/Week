@@ -5,7 +5,6 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-angle-double-down"></i></span>
-
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -13,10 +12,10 @@
                         <a class="nav-link" href="/users/login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/users/register">Register</a>
+                        <a class="nav-link" href="/users/register">Register <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/aboutus">About Us <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/whyHDX">Why use HDX?</a>
@@ -32,29 +31,35 @@
         </nav>
     </div>
 </div>
-<div id="aboutUsPg">
-    <div class="row">
-        <div class="col-6">
-            <h1 class="subtextHeader card">About Us</h1>
-        </div>
-    </div>
+<div id="dashboardPg">
+    <h1 class="mt-4">Dashboard</h1>
+    <p class="lead mb-3">Welcome {{username}}!</p>
     <div class="row">
         <div class="col-md-6 m-auto">
             <div class="card card-body">
-                {{!-- <p>About us</p> --}}
-                <img src="/content/images/woman-aboutUs.jpg" alt="woman taking bloodpressure" class="subtextImg">
-                <p class="lead mt-4">
-                    No Account? <a href="/users/register">Register</a>
-                </p>
+                <h2>Content</h2>
+                <table class="table table-striped rounded" style="background: #D4D5D5">
+                    <thead class="thead-dark rounded">
+                        <tr>
+                            <th scope="col">Product Name:</th>
+                            <th scope="col">Seller:</th>
+                            <th scope="col">Price:</th>
+                            <th scope="col">Quantity:</th>
+                            <th scope="col">Other stuff:</th>
+                            <th scope="col">Also things:</th>                        
+                        </tr>
+                    </thead>
+                    <tbody id="productTable">                        
+                    </tbody>
+                </table>
             </div>
         </div>
         <div class="col-md-6 m-auto">
             <div class="card card-body">
-                {{!-- <p>About us</p> --}}
-                <p>Awesome things about HDX!</p>
-                <p>Brand identity</p>
-                <p>Share the mission!</p>
+                <p>Manage Account</p>
+                <button>Do the things</button>
             </div>
         </div>
     </div>
+    <a href="/users/logout" class="btn btn-secondary">Logout</a>
 </div>
