@@ -17,20 +17,26 @@
                         <a class="nav-link" href="/users/register">Register</a>
                     </li>
                     {{/unless}}
-                    {{#if username}}
                     <li class="nav-item">
-                        <a class="nav-link" href="/dashboard">{{username}}'s Dashboard</a>
-                    </li>
-                    <li class="nav-item pt-1" style="font-size: 12px">
-                        <a class="nav-link" href="/users/logout">(Logout?)</a>
-                    </li>
-                    {{/if}}
-                    <li class="nav-item active">
                         <a class="nav-link" href="/aboutus">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/whyHDX">Why use HDX? <span class="sr-only">(current)</span></a>
                     </li>
+                    {{#if username}}
+                    {{!-- <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">{{username}}'s Dashboard</a>
+                    </li> --}}
+                    {{!-- <li class="nav-item pt-1" style="font-size: 12px">
+                        <a class="nav-link" href="/users/logout">(Logout?)</a>
+                    </li> --}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/logout">Logout</a>
+                    </li>
+                    {{/if}}
                 </ul>
             </div>
             <div id="right">
@@ -44,13 +50,25 @@
 </div>
 <div id="whyHDXPg">
     <div class="row">
+        <div class="col-6">
+            <h1 class="subtextHeader card">Why use HDX?</h1>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-6 m-auto">
             <div class="card card-body">
-                <p>Why use HDX?</p>
-                <img src="/content/images/dna-3539309.jpg" alt="Why use HDX?" class="img-thumbnail">
+                {{!-- <p>Why use HDX?</p> --}}
+                <img src="/content/images/dna-3539309.jpg" alt="Why use HDX?" class="subtextImg">
+                {{#unless username}}
                 <p class="lead mt-4">
                     No Account? <a href="/users/register">Register</a>
                 </p>
+                {{/unless}}
+                {{#if username}}
+                <p class="lead mt-4">
+                    <a href="/users/logout">Logout</a>
+                </p>
+                {{/if}}
             </div>
         </div>
         <div class="col-md-6 m-auto">

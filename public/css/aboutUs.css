@@ -1,0 +1,8 @@
+#aboutUsPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/abstract-img-background.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}

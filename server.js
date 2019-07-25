@@ -41,5 +41,6 @@ app.use("/", require("./routes/index"));
 app.use("/users", require("./routes/users"));
 app.use(require("./routes/aboutus"));
 app.use(require("./routes/whyHDX"));
+app.use(require("./routes/product"));
 
 app.listen(PORT, console.log(`listenging on port ${PORT}`));

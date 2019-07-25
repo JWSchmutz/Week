@@ -1,0 +1,8 @@
+#registerPg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../content/images/computer-register.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}

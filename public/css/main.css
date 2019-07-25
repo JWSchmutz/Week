@@ -46,32 +46,27 @@ footer a:hover {
     color: #127BBC;
 }
 
-#right
-{
+#right {
     /* position:absolute; */
     right:0px;
     margin-right: 1rem;
 }
 
 .fa-angle-double-down {
-color: #f2f2f2;
+    color: #f2f2f2;
+}
+
+.subtextHeader {
+    text-align: center;
+
+}
+
+.subtextImg {
+   border-radius: .25rem;
+   max-width: 100%;
+   height: auto;
 }
  
-/* Landing Page */
-
-#landingPg {
-    height: 100%;
-    width: 100%;
-    background-image: url(../content/images/abstract-img-background.jfif);
-    background-size: cover;
-    background-position: center;
-    padding: 4rem;
-}
-
-#landingPg .card {
-    margin: 2rem;
-}
-
 /* Login Page */
 
 #loginPg {
@@ -90,28 +85,4 @@ color: #f2f2f2;
     font-size: 2.5rem;
 }
 
-/* Register Page */
 
-#registerPg {
-    height: 100%;
-    width: 100%;
-    background-image: url(../content/images/computer-register.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 1rem;
-}
-
-/* Dashboard */
-
-#dashboardPg {
-    height: 100%;
-    width: 100%;
-    background-image: url(../content/images/abstract-img-background.jfif);
-    background-size: cover;
-    background-position: center;
-    padding: 1rem;
-}
-
-#dashboardPg .card {
-    margin: 2rem;
-}

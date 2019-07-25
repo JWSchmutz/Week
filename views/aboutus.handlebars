@@ -17,20 +17,20 @@
                         <a class="nav-link" href="/users/register">Register</a>
                     </li>
                     {{/unless}}
-                    {{#if username}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/dashboard">{{username}}'s Dashboard</a>
-                    </li>
-                    <li class="nav-item pt-1" style="font-size: 12px">
-                        <a class="nav-link" href="/users/logout">(Logout?)</a>
-                    </li>
-                    {{/if}}
                     <li class="nav-item active">
                         <a class="nav-link" href="/aboutus">About Us <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/whyHDX">Why use HDX?</a>
                     </li>
+                    {{#if username}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/logout">Logout</a>
+                    </li>
+                    {{/if}}
                 </ul>
             </div>
             <div id="right">
@@ -44,18 +44,30 @@
 </div>
 <div id="aboutUsPg">
     <div class="row">
+        <div class="col-6">
+            <h1 class="subtextHeader card">About Us</h1>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-6 m-auto">
             <div class="card card-body">
-                <p>About us</p>
-                <img src="..." alt="placeholder img text" class="img-thumbnail">
+                {{!-- <p>About us</p> --}}
+                <img src="/content/images/woman-aboutUs.jpg" alt="woman taking bloodpressure" class="subtextImg">
+                {{#unless username}}
                 <p class="lead mt-4">
                     No Account? <a href="/users/register">Register</a>
                 </p>
+                {{/unless}}
+                {{#if username}}
+                <p class="lead mt-4">
+                    <a href="/users/logout">Logout</a>
+                </p>
+                {{/if}}
             </div>
         </div>
         <div class="col-md-6 m-auto">
             <div class="card card-body">
-                <p>About us</p>
+                {{!-- <p>About us</p> --}}
                 <p>Awesome things about HDX!</p>
                 <p>Brand identity</p>
                 <p>Share the mission!</p>
