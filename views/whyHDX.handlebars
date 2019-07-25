@@ -17,6 +17,11 @@
                         <a class="nav-link" href="/users/register">Register</a>
                     </li>
                     {{/unless}}
+                    {{#if username}}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/dashboard">{{username}}'s Dashboard</a>
+                    </li>
+                    {{/if}}
                     <li class="nav-item">
                         <a class="nav-link" href="/aboutus">About Us</a>
                     </li>
