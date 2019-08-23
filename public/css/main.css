@@ -8,6 +8,8 @@ body {
 nav {
     background-color: #182e49;
     color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.534)
+
 }
 
  nav a {
@@ -17,6 +19,7 @@ nav {
 footer {
     background-color: #f2f2f2;
     color: #636363;
+    
 }
 
 .card {
@@ -72,7 +75,7 @@ footer a:hover {
 #loginPg {
     height: 100%;
     width: 100%;
-    background-image: url(../content/images/computer-login.jpg);
+    background-image: url(../assets/images/computer-login.jpg);
     background-size: cover;
     background-position: center;
     padding: 4rem;

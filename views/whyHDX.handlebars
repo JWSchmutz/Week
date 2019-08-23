@@ -17,11 +17,6 @@
                         <a class="nav-link" href="/users/register">Register</a>
                     </li>
                     {{/unless}}
-                    {{#if username}}
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/dashboard">{{username}}'s Dashboard</a>
-                    </li>
-                    {{/if}}
                     <li class="nav-item">
                         <a class="nav-link" href="/aboutus">About Us</a>
                     </li>
@@ -29,14 +24,11 @@
                         <a class="nav-link" href="/whyHDX">Why use HDX? <span class="sr-only">(current)</span></a>
                     </li>
                     {{#if username}}
-                    {{!-- <li class="nav-item">
-                        <a class="nav-link" href="/dashboard">{{username}}'s Dashboard</a>
-                    </li> --}}
-                    {{!-- <li class="nav-item pt-1" style="font-size: 12px">
-                        <a class="nav-link" href="/users/logout">(Logout?)</a>
-                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="/product">Products</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/dashboard">My Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/users/logout">Logout</a>
