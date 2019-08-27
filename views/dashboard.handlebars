@@ -1,26 +1,14 @@
 <div class="row">
     <div class="col-12">
         <nav class="navbar navbar-expand-lg navbar">
-            <a class="navbar-brand" href="#"><img src="/content/images/StrongLogo2.png" alt="strong logo"></a>
+            <a class="navbar-brand" href="/"><img src="/assets/images/StrongLogo2.png" alt="strong logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-angle-double-down"></i></span>
+
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    {{#unless username}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users/login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users/register">Register <span class="sr-only">(current)</span></a>
-                    </li>
-                    {{/unless}}
-                    {{#if username}}
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/dashboard">{{username}}'s Dashboard <span class="sr-only">(current)</a>
-                    </li>
-                    {{/if}}
                     <li class="nav-item">
                         <a class="nav-link" href="/aboutus">About Us</a>
                     </li>
@@ -31,17 +19,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/product">Products</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users/logout">Logout</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/dashboard">My Dashboard <span class="sr-only">(current)</span></a>
                     </li>
                     {{/if}}
                 </ul>
             </div>
             <div id="right">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                <ul class="navbar-nav">
+                    {{#unless username}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/register">Register</a>
+                    </li>
+                    {{/unless}}
+                    {{#if username}}
+                    <li class="nav-item">
+                        <div class="nav-link">Hello, {{username}}</div>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/users/logout">Logout</a>
+                    </li>
+                    {{/if}}
+                </ul>
             </div>
         </nav>
     </div>
@@ -50,18 +52,42 @@
     <h1 class="mt-4">Dashboard</h1>
     <p class="lead mb-3">Welcome {{username}}!</p>
     <div class="row">
-        <div class="col-md-6 m-auto">
+        {{!-- <div class="col-md-6 m-auto">
             <div class="card card-body">
                 <h2>Content</h2>
                 <button><a href="/product">View Product Pricing</a></button>
             </div>
-        </div>
-        <div class="col-md-6 m-auto">
+        </div> --}}
+        <div class="col-md-8 m-auto">
             <div class="card card-body">
-                <p>Manage Account</p>
-                <button>Do the things</button>
+                <h3>Manage Account</h3>
+                <ul>
+                    <li>
+                        <div id="overview">Account Overview</div>
+                    </li>
+                    <li>
+                        <div >Payment Information</div>
+                    </li>
+                    
+                </ul>
+                <form action="/charge" method="post" id="payment-form">
+                    <div class="form-row">
+                        <label for="card-element">
+                            Enter Payment Infomation
+                        </label>
+                        <br>
+                        <div id="card-element">
+                            <!-- A Stripe Element will be inserted here. -->
+                        </div>
+
+                        <!-- Used to display form errors. -->
+                        <div id="card-errors" role="alert"></div>
+                    </div>
+
+                    <button>Submit Payment</button>
+                </form>
+                {{!-- <button>Do the things</button> --}}
             </div>
         </div>
     </div>
-    <a href="/users/logout" class="btn btn-secondary">Logout</a>
 </div>

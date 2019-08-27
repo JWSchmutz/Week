@@ -1,26 +1,14 @@
 <div class="row">
     <div class="col-12">
         <nav class="navbar navbar-expand-lg navbar">
-            <a class="navbar-brand" href="#"><img src="/content/images/StrongLogo2.png" alt="strong logo"></a>
+            <a class="navbar-brand" href="/"><img src="/assets/images/StrongLogo2.png" alt="strong logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-angle-double-down"></i></span>
+
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    {{#unless username}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users/login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users/register">Register</a>
-                    </li>
-                    {{/unless}}
-                    {{#if username}}
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/dashboard">{{username}}'s Dashboard</a>
-                    </li>
-                    {{/if}}
                     <li class="nav-item">
                         <a class="nav-link" href="/aboutus">About Us</a>
                     </li>
@@ -32,16 +20,39 @@
                         <a class="nav-link" href="/product">Products <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/users/logout">Logout</a>
+                        <a class="nav-link" href="/dashboard">My Dashboard</a>
                     </li>
                     {{/if}}
                 </ul>
             </div>
             <div id="right">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                <ul class="navbar-nav">
+                    {{#unless username}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/register">Register</a>
+                    </li>
+                    {{/unless}}
+                    {{#if username}}
+                    <li class="nav-item">
+                        <div class="nav-link">Hello, {{username}}</div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <div>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </li>
+                    {{/if}}
+                </ul>
             </div>
         </nav>
     </div>
@@ -51,7 +62,7 @@
     <div class="row">
         <div class="col-12 m-auto">
             <div class="card card-body">
-                <h2>Content</h2>
+                <h2>Products</h2>
                 <table class="table table-striped rounded" style="background: #D4D5D5">
                     <thead class="thead-dark rounded">
                         <tr>
@@ -110,5 +121,4 @@
             </div>
         </div>
     </div>
-    <a href="/users/logout" class="btn btn-secondary">Logout</a>
 </div>
