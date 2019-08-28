@@ -54,22 +54,16 @@
                     </li>
 
                 </ul>
-                <form action="/charge" method="post" id="payment-form">
-                    <div class="form-row">
-                        <label for="card-element">
-                            Enter Payment Infomation
-                        </label>
-                        <br>
-                        <div id="card-element">
-                            <!-- A Stripe Element will be inserted here. -->
-                        </div>
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-sku_Fhxn716nFDa0nW"
+  role="link"
+>
+  Checkout
+</button>
 
-                        <!-- Used to display form errors. -->
-                        <div id="card-errors" role="alert"></div>
-                    </div>
-
-                    <button>Submit Payment</button>
-                </form>
+<div id="error-message"></div>
                 {{!-- <button>Do the things</button> --}}
             </div>
         </div>
