@@ -1,91 +1,86 @@
 /* Main */
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
-    background-color: #182e49;
-    color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,.534)
-
+  background-color: #182e49;
+  color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.534);
 }
 
- nav a {
-     color: #ffffff;
+nav a {
+  color: #ffffff;
 }
 
 footer {
-    background-color: #f2f2f2;
-    color: #636363;
-    
+  background-color: #f2f2f2;
+  color: #636363;
 }
 
 .card {
-    background-color: rgba(38, 43, 37, .6);
-    color: lightgray;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 #chatBtn {
-    background-color: #182e49;
-    color: #24A68C;
-    border-radius: .5rem;
-    font-size: 1.5rem;
-    border: none;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,.534), 0 6px 20px 0 rgba(0,0,0,.534);
-
+  background-color: #182e49;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.534),
+    0 6px 20px 0 rgba(0, 0, 0, 0.534);
 }
 
 footer a:link {
-    color: #182e49;
+  color: #182e49;
 }
- 
+
 footer a:visited {
-    color: #24A68C;
+  color: #24a68c;
 }
-  
+
 footer a:hover {
-    color: #127BBC;
+  color: #127bbc;
 }
 
 #right {
-    /* position:absolute; */
-    right:0px;
-    margin-right: 1rem;
+  /* position:absolute; */
+  right: 0px;
+  margin-right: 1rem;
 }
 
 .fa-angle-double-down {
-    color: #f2f2f2;
+  color: #f2f2f2;
 }
 
 .subtextHeader {
-    text-align: center;
-
+  text-align: center;
 }
 
 .subtextImg {
-   border-radius: .25rem;
-   max-width: 100%;
-   height: auto;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
 }
- 
+
 /* Login Page */
 
 #loginPg {
-    height: 100%;
-    width: 100%;
-    background-image: url(../assets/images/computer-login.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 4rem;
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/images/computer-login.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
 }
 
 #loginSubtextBox p {
-    text-align: center;
-    margin: 0;
-    padding: 2rem;
-    font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  font-size: 2.5rem;
 }
-
-

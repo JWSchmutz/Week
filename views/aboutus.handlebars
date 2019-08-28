@@ -15,35 +15,37 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/whyHDX">Why use HDX?</a>
                     </li>
+                    {{#unless username}}
+                    <li class="nav-item active">
+                        <a class="nav-link disabled" href="/dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link disabled" href="/products">Products</a>
+                    </li>
+                    {{/unless}}
+
                     {{#if username}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/product">Products</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/dashboard">My Dashboard</a>
+                        <a class="nav-link" href="/product">Products</a>
                     </li>
                     {{/if}}
                 </ul>
             </div>
             <div id="right">
-                <ul class="navbar-nav">
+                <form class="form-inline my-2 my-lg-0">
                     {{#unless username}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users/login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users/register">Register</a>
-                    </li>
+                    <a class="nav-link" href="/users/login">Login</a>
+                    <a class="nav-link" href="/users/register">Register</a>
                     {{/unless}}
                     {{#if username}}
-                    <li class="nav-item">
-                        <div class="nav-link">Hello, {{username}}</div>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="/users/logout">Logout</a>
-                    </li>
+                    <a class="nav-link" href="/dashboard">Welcome, {{username}}!</a>
+                    <a class="nav-link" href="/users/logout">Logout</a>
                     {{/if}}
-                </ul>              
+
+                </form>
             </div>
         </nav>
     </div>
