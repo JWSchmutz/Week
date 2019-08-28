@@ -5,35 +5,52 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-angle-double-down"></i></span>
+
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/users/login">Login</a>
-                    </li>
-                    <li class="nav-item  active">
-                        <a class="nav-link" href="/users/register">Register <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/aboutus">About Us</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/aboutus">About Us <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/whyHDX">Why use HDX?</a>
                     </li>
+                    {{#unless username}}
                     <li class="nav-item active">
-                        <a class="nav-link" href="/product">Products</span></a>
+                        <a class="nav-link disabled" href="/dashboard">Dashboard</a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link disabled" href="/products">Products</a>
+                    </li>
+                    {{/unless}}
+
+                    {{#if username}}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product">Products</a>
+                    </li>
+                    {{/if}}
                 </ul>
             </div>
             <div id="right">
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    {{#unless username}}
+                    <a class="nav-link" href="/users/login">Login</a>
+                    <a class="nav-link" href="/users/register">Register</a>
+                    {{/unless}}
+                    {{#if username}}
+                    <a class="nav-link" href="/dashboard">Welcome, {{username}}!</a>
+                    <a class="nav-link" href="/users/logout">Logout</a>
+                    {{/if}}
+
                 </form>
             </div>
         </nav>
     </div>
 </div>
+
 <div id="registerPg">
     <div class="row">
     </div>
