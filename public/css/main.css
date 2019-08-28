@@ -6,15 +6,9 @@ body {
 }
 
 nav {
-<<<<<<< HEAD
   background-color: #182e49;
   color: #ffffff;
-=======
-    background-color: #182e49;
-    color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,.534)
-
->>>>>>> 1630d8bbcce75d71e0da476cb44929bc544e5b8b
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.534);
 }
 
 nav a {
@@ -22,14 +16,8 @@ nav a {
 }
 
 footer {
-<<<<<<< HEAD
   background-color: #f2f2f2;
   color: #636363;
-=======
-    background-color: #f2f2f2;
-    color: #636363;
-    
->>>>>>> 1630d8bbcce75d71e0da476cb44929bc544e5b8b
 }
 
 .card {
@@ -82,21 +70,12 @@ footer a:hover {
 /* Login Page */
 
 #loginPg {
-<<<<<<< HEAD
   height: 100%;
   width: 100%;
-  background-image: url(../content/images/computer-login.jpg);
+  background-image: url(../assets/images/computer-login.jpg);
   background-size: cover;
   background-position: center;
   padding: 4rem;
-=======
-    height: 100%;
-    width: 100%;
-    background-image: url(../assets/images/computer-login.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 4rem;
->>>>>>> 1630d8bbcce75d71e0da476cb44929bc544e5b8b
 }
 
 #loginSubtextBox p {
