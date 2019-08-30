@@ -42,31 +42,62 @@
                 <button><a href="/product">View Product Pricing</a></button>
             </div>
         </div> --}}
-        <div class="col-md-8 m-auto">
+        <div class="col-sm-4 col-md-8 col-lg-8 m-auto">
             <div class="card card-body">
-                <h3>Manage Account</h3>
-                <ul>
+                <h3>Account Overview</h3> 
+                <hr>
+                <ul class="removeListStyle">
                     <li>
-                        <div id="overview">Account Overview</div>
+                        <b>Username</b>
+                        <br>
+                         {{username}}
+                        <br>
                     </li>
                     <li>
-                        <div>Payment Information</div>
+                        <br>
+                        <b>Payment Options</b>
+                        <br>
+                        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                        <button class="checkoutBtn" id="checkout-button-sku_Fhxn716nFDa0nW" role="link">
+                            5 Item Pricing Checkout
+                        </button>
+                        <button class="checkoutBtn" id="checkout-button-sku_FiIm0pOWGrT2Bc" role="link">
+                            1 Item Pricing Checkout
+                        </button>
+                        <br>
                     </li>
 
                 </ul>
-                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                <button
-                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    id="checkout-button-sku_Fhxn716nFDa0nW" role="link">
-                    5 Item Pricing Checkout
-                </button>
-                <button
-                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em; margin-top:1rem;"
-                    id="checkout-button-sku_FiIm0pOWGrT2Bc" role="link">
-                    1 Item Pricing Checkout
-                </button>
                 <div id="error-message"></div>
                 {{!-- <button>Do the things</button> --}}
+                <div>
+                    <ul class="removeListStyle">
+                        <li>
+                            <br>
+                            <b>Member ID</b>
+                            <br>
+                            98538
+                            {{!-- {{}} --}}
+                            <br>
+                        </li>
+                        <li>
+                            <br>
+                            <b>Member Since</b>
+                            <br>
+                            08/15/19
+                            {{!-- {{}} --}}
+                            <br>
+                        </li>
+                        <li>
+                            <br>
+                            <b>Email</b>
+                            <br>
+                            strongmedsupply@gmail.com
+                            {{!-- {{email}} --}}
+                            <br>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

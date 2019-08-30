@@ -42,3 +42,25 @@
   .StripeElement--webkit-autofill {
     background-color: #fefde5 !important;
   }
+
+  .checkoutBtn{
+    background-color:#127bbc;
+    color:#FFF;
+    padding:8px 12px;
+    border:0;
+    border-radius:4px;
+    font-size:1em;
+    width: 50%;
+    margin: auto;
+    margin-top:1rem;
+  }
+
+  .removeListStyle {
+    list-style: none;
+  }
+
+  hr {
+    background-color: white;
+    margin-top: 0;
+  }
+
