@@ -21,8 +21,9 @@ footer {
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
+  margin-bottom: .5rem
 }
 
 #chatBtn {
@@ -81,6 +82,5 @@ footer a:hover {
 #loginSubtextBox p {
   text-align: center;
   margin: 0;
-  padding: 2rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
