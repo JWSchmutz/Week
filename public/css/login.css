@@ -1,0 +1,5 @@
+@media only screen and (max-width: 767px) {
+  .lead.mt-4 button {
+    margin-top: 14px !important;
+  }
+}

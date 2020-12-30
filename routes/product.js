@@ -6,9 +6,8 @@ const Supplies = require("../models/Supplies");
 router.get("/product", ensureAuthenticated, (req, res) => {
   Supplies.find()
     .sort({ rank: 1 })
-    .then(result => {
+    .then((result) => {
       const firstResults = [];
-      const paidResults = [];
       const unpaidResults = [];
       for (let i = 0; i < 5; i++) {
         firstResults.push(result[i]);
@@ -20,7 +19,7 @@ router.get("/product", ensureAuthenticated, (req, res) => {
       const hbs_obj = {
         username: req.user.username,
         result: firstResults,
-        unpaidResult: unpaidResults
+        unpaidResult: unpaidResults,
       };
       console.log(hbs_obj.result[0]);
       res.render("product", hbs_obj);
