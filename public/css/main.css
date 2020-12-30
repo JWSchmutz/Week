@@ -15,6 +15,14 @@ nav a {
   color: #ffffff;
 }
 
+nav a img {
+  width: 60px;
+}
+
+.main-area {
+  min-height: calc(100vh - 252px);
+}
+
 footer {
   background-color: #f2f2f2;
   color: #636363;
@@ -23,7 +31,7 @@ footer {
 .card {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  margin-bottom: .5rem
+  margin-bottom: 0.5rem;
 }
 
 #chatBtn {
@@ -83,4 +91,37 @@ footer a:hover {
   text-align: center;
   margin: 0;
   font-size: 2rem;
+}
+
+.tool-tip-parent {
+  position: relative;
+  display: inline-block;
+}
+
+.tool-tip-parent .tool-tip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tool-tip-parent:hover .tool-tip {
+  visibility: visible;
+}
+
+@media (max-width: 902px) {
+  .tool-tip-parent .tool-tip {
+    top: 2px;
+    left: 170px;
+  }
 }

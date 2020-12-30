@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-12">
         <nav class="navbar navbar-expand-lg navbar">
-            <a class="navbar-brand" href="/"><img src="/assets/images/StrongLogo2.png" alt="strong logo"></a>
+            <a class="navbar-brand" href="/"><img src="/assets/images/WeekLogo.png" alt="week logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-angle-double-down"></i></span>
@@ -16,14 +16,17 @@
                         <a class="nav-link" href="/whyHDX">Why use HDX?</a>
                     </li>
                     {{#unless username}}
-                    <li class="nav-item active">
-                        <a class="nav-link disabled" href="/dashboard">Dashboard</a>
+                    <li class="nav-item">
+                        <div class="tool-tip-parent"> <a class="nav-link disabled" href="/dashboard">Dashboard </a>
+                            <span class="tool-tip">Login to view</span>
+                        </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link disabled" href="/products">Products</a>
+                    <li class="nav-item">
+                        <div class="tool-tip-parent"> <a class="nav-link disabled" href="/products">Products</a>
+                            <span class="tool-tip">Login to view</span>
+                        </div>
                     </li>
                     {{/unless}}
-
                     {{#if username}}
                     <li class="nav-item active">
                         <a class="nav-link" href="/dashboard">Dashboard</a>
@@ -51,7 +54,7 @@
     </div>
 </div>
 
-<div id="registerPg">
+<div class="main-area" id="registerPg">
     <div class="row">
     </div>
     <div class="row mt-5">
@@ -80,8 +83,8 @@
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email"
-                            {{#if this.email}}value={{this.email}}{{/if}} />
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" {{#if
+                            this.email}}value={{this.email}}{{/if}} />
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>

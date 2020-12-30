@@ -1,5 +1,5 @@
 {
-  "name": "Strong",
+  "name": "Week",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JWSchmutz/Strong.git"
+    "url": "git+https://github.com/JWSchmutz/Week.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JWSchmutz/Strong/issues"
+    "url": "https://github.com/JWSchmutz/Week/issues"
   },
-  "homepage": "https://github.com/JWSchmutz/Strong#readme",
+  "homepage": "https://github.com/JWSchmutz/Week#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",

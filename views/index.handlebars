@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-12">
         <nav class="navbar navbar-expand-lg navbar">
-            <a class="navbar-brand" href="/"><img src="/assets/images/StrongLogo2.png" alt="strong logo"></a>
+            <a class="navbar-brand" href="/"><img src="/assets/images/WeekLogo.png" alt="week logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-angle-double-down"></i></span>
@@ -16,14 +16,17 @@
                         <a class="nav-link" href="/whyHDX">Why use HDX?</a>
                     </li>
                     {{#unless username}}
-                    <li class="nav-item active">
-                        <a class="nav-link disabled" href="/dashboard">Dashboard</a>
+                    <li class="nav-item">
+                        <div class="tool-tip-parent"> <a class="nav-link disabled" href="/dashboard">Dashboard </a>
+                            <span class="tool-tip">Login to view</span>
+                        </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link disabled" href="/products">Products</a>
+                    <li class="nav-item">
+                        <div class="tool-tip-parent"> <a class="nav-link disabled" href="/products">Products</a>
+                            <span class="tool-tip">Login to view</span>
+                        </div>
                     </li>
                     {{/unless}}
-
                     {{#if username}}
                     <li class="nav-item active">
                         <a class="nav-link" href="/dashboard">Dashboard</a>
@@ -50,11 +53,7 @@
         </nav>
     </div>
 </div>
-<div id="landingPg">
-    <!-- Button trigger modal -->
-    {{!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#landingPgModal">
-        Demo Modal
-    </button> --}}
+<div class="main-area" id="landingPg">
 
     <!-- Modal -->
     <div class="modal fade" id="landingPgModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
