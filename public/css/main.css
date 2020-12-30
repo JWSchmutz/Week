@@ -137,4 +137,7 @@ footer a:hover {
   .table-striped {
     margin-left: -20px;
   }
+  #product-card {
+    overflow-x: scroll;
+  }
 }
