@@ -3,10 +3,13 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 //27017 is the default mongoDB port
-const uri = process.env.MONGODB_URI || "mongodb://localhost/week";
+const uri =
+  "mongodb+srv://Admin:AdminPassword@cluster0.zyflq.mongodb.net/Week?retryWrites=true&w=majority";
 console.log(uri);
 
-mongoose.connect(uri, { useNewUrlParser: true }).then(
+mongoose.set("debug", true);
+
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }).then(
   () => {
     console.log("Connected to Mongo");
   },

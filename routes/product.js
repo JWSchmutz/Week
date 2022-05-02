@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const { ensureAuthenticated } = require("../config/auth");
-const Supplies = require("../models/Supplies");
+const Supply = require("../models/Supplies");
 
 router.get("/product", ensureAuthenticated, (req, res) => {
-  Supplies.find()
-    .sort({ rank: 1 })
+  Supply.find()
+    .lean()
+    .sort({ Rank: 1 })
     .then((result) => {
       const firstResults = [];
       const unpaidResults = [];
@@ -15,15 +16,13 @@ router.get("/product", ensureAuthenticated, (req, res) => {
       for (let i = 5; i < result.length; i++) {
         unpaidResults.push(result[i]);
       }
-      console.log("====", result);
       const hbs_obj = {
         username: req.user.username,
         result: firstResults,
         unpaidResult: unpaidResults,
       };
-      console.log(hbs_obj.result[0]);
-      res.render("product", hbs_obj);
       console.log(hbs_obj);
+      res.render("product", hbs_obj);
     });
 });
 

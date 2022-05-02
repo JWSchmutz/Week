@@ -37,7 +37,7 @@
     <div class="row">
         <div class="col-12 m-auto">
             <div class="card card-body fit-to-phone" id="product-card">
-                <h2>Products</h2>
+                <h2>Products (test data)</h2>
                 <table class="table table-striped rounded" style="background: #D4D5D5">
                     <thead class="thead-dark rounded">
                         <tr>
@@ -50,15 +50,15 @@
                         {{#each result}}
                         <tr>
                             <th scope="row">{{Name}}</th>
-                            <td class="text-center">{{Rank}}</td>
-                            <td>{{_id}}</td>
+                            <td><div style="width: 126px" class="text-center">{{Rank}}</div></td>
+                            <td>{{[Item Number]}}</td>
                         </tr>
                         {{/each}}
                         {{#each unpaidResult}}
                         <tr>
                             <th scope="row">{{Name}}</th>
-                            <td class="text-center"><button id={{_id}}>Purchase Info</button></td>
-                            <td>{{_id}}</td>
+                            <td><a href="/dashboard"><button id={{_id}}>Purchase Info</button></a></td>
+                            <td>{{[Item Number]}}</td>
                         </tr>
                         {{/each}}
                     </tbody>
